@@ -2,7 +2,7 @@
 
 Stone Template Pirates
 
-Student Name (Not your pokemon ID)
+Student Name: <Not your pokemon ID>
 
 Issues:
 
@@ -25,7 +25,7 @@ You could just walk up and take the money, except you don't know if it is worth 
 
 To figure this out, you need to write templates to convert the value of local currency to other currencies. 
 
-You need to write templates to convert between currencies. Your templates should be written to do as much at compile time as possible. 
+You need to write templates to convert between currencies. Your goal is to generate NO code. Ideally this means everything is calculated by the compiler.  
 
 Here is a conversion table you can use for your software: 
 

@@ -25,16 +25,18 @@ You could just walk up and take the money, except you don't know if it is worth 
 
 To figure this out, you need to write templates to convert the value of local currency to other currencies. 
 
-You need to write templates to convert between currencies. Your goal is to generate NO code. Ideally this means everything is calculated by the compiler.  
+You need to write templates to convert between currencies. Your goal is to generate **NO** code. Ideally this means everything is calculated by the compiler.  
 
-Here is a conversion table you can use for your software: 
+Here is a conversion table you can use for your software:  
 
-United States:    US, 1.0
-Australia:        AU, 0.76
-New Zealand:      NZ, 0.71
-Fiji:             FJ, 0.49
-Tonga:            TO, 0.45
-Papua New Guinea: PG, 0.31
-Solomon Islands:  SB, 0.13
+| Country          | Code | Value |
+| ---------------- | ---- | ----- |
+| United States    | US   | 1.0   |
+| Australia        | AU   | 0.76  |
+| New Zealand      | NZ   | 0.71  |
+| Fiji             | FJ   | 0.49  |
+| Tonga            | TO   | 0.45  | 
+| Papua New Guinea | PG   | 0.31  |
+| Solomon Islands  | SB   | 0.13  | 
 
 see: https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2 for a list of 2 letter country codes

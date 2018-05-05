@@ -10,12 +10,12 @@ Notes:
 
 ----
 
-Proect Name: StoneMoney
+Project Name: StoneMoney
 
 Purpose:
 
 - Learn to use templates.
-- Understand the differnce between compile-time and run-time code. 
+- Understand the difference between compile-time and run-time code. 
 
 In this project you will leave the shores of New Zealand and sail NW to the island of [Yap](https://en.wikipedia.org/wiki/Yap). 
 

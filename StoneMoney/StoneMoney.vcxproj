@@ -23,7 +23,7 @@
     <ProjectGuid>{D0AA8F60-0AFE-4F1C-B45A-3F4FD7B2C7CA}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>StoneMoney</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

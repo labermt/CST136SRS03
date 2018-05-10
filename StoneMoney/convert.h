@@ -3,13 +3,13 @@
 
 template
 <
-	int US,
-	int AU, 
-	int NZ, 
-	int FJ,
-	int TO,
-	int PG,
-	int SB
+	int US = 100,
+	int AU = 76, 
+	int NZ = 71, 
+	int FJ = 49,
+	int TO = 45,
+	int PG = 31,
+	int SB = 13
 >
 
 class Currency
@@ -18,13 +18,18 @@ private:
 	double val;
 
 public:
-	explicit Currency(double initVal = 0): val(initVal) {}
-	double value() const { return val; }
-	double& value() { return val; }
 
-	template<typename T>
-	double convert(T value)
+	explicit Currency(double initVal = 0): val{initVal} {}
+
+	Currency<US,AU,NZ,FJ,TO,PG,SB>&operator =( Currency<US,AU,NZ,FJ,TO,PG,SB> rhs)
 	{
-		return ((value *1.0) * val) / 100;
+		val = ((val * 1.0) * (rhs * 1.0)) / 100;
+		return *this;
+	}
+
+	template<typename T> 
+	constexpr double convert(T value)
+	{
+		return ((value *1.0) * get_value()) / 100;
 	}
 };

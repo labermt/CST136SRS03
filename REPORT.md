@@ -2,8 +2,8 @@
 
 Stone Template Pirates
 
-Student Name: <Not your pokemon ID>
+Student Name: Timothy Carpenter
 
-Issues:
+Issues: //no code
 
-Notes:
+Notes: //ToDo: write code

@@ -1,3 +1,6 @@
+#Stone Template Pirates
+
+
 Project Name: StoneMoney
 
 Purpose:

@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2027
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "StoneMoney", "StoneMoney\StoneMoney.vcxproj", "{602E4222-8703-45A4-B40D-2172FF9997DC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0FA12070-3A68-436C-B5D8-06C00A81E114}"
+	ProjectSection(SolutionItems) = preProject
+		..\README.md = ..\README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{602E4222-8703-45A4-B40D-2172FF9997DC}.Debug|x64.ActiveCfg = Debug|x64
+		{602E4222-8703-45A4-B40D-2172FF9997DC}.Debug|x64.Build.0 = Debug|x64
+		{602E4222-8703-45A4-B40D-2172FF9997DC}.Debug|x86.ActiveCfg = Debug|Win32
+		{602E4222-8703-45A4-B40D-2172FF9997DC}.Debug|x86.Build.0 = Debug|Win32
+		{602E4222-8703-45A4-B40D-2172FF9997DC}.Release|x64.ActiveCfg = Release|x64
+		{602E4222-8703-45A4-B40D-2172FF9997DC}.Release|x64.Build.0 = Release|x64
+		{602E4222-8703-45A4-B40D-2172FF9997DC}.Release|x86.ActiveCfg = Release|Win32
+		{602E4222-8703-45A4-B40D-2172FF9997DC}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D8777A6F-6D5D-4F6E-B0D1-EA96EE760870}
+	EndGlobalSection
+EndGlobal

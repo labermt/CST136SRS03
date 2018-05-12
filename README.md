@@ -2,7 +2,7 @@
 
 Stone Template Pirates
 
-Student Name: <Not your pokemon ID>
+Student Name:
 
 Issues:
 

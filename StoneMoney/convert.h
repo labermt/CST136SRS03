@@ -12,16 +12,16 @@ template
 	int SB = 13
 >
 
+
 class Currency
 {
-private:
-	double val;
-
-public:
-
+	template<typename T>
+	explicit Currency(double int_val = 1.0) : val{ int_val }
+	{
+	}
 	explicit Currency(double initVal = 0): val{initVal} {}
 
-	Currency<US,AU,NZ,FJ,TO,PG,SB>&operator =( Currency<US,AU,NZ,FJ,TO,PG,SB> rhs)
+	//Currency<US,AU,NZ,FJ,TO,PG,SB>&operator =( Currency<US,AU,NZ,FJ,TO,PG,SB> rhs)
 	{
 		val = ((val * 1.0) * (rhs * 1.0)) / 100;
 		return *this;
@@ -30,6 +30,6 @@ public:
 	template<typename T> 
 	constexpr double convert(T value)
 	{
-		return ((value *1.0) * get_value()) / 100;
+		return ((value *1.0) * val) / 100;
 	}
 };

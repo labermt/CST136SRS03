@@ -6,6 +6,7 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3E9F182A-A20E-4631-A864-B5B8C06B2D69}"
 	ProjectSection(SolutionItems) = preProject
 		README.md = README.md
+		REPORT.md = REPORT.md
 	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "StoneMoney", "StoneMoney\StoneMoney.vcxproj", "{D0AA8F60-0AFE-4F1C-B45A-3F4FD7B2C7CA}"

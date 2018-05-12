@@ -9,12 +9,11 @@ using TO = Currency<0,0,0,0,1,0,0>;
 using PG = Currency<0,0,0,0,0,1,0>;
 using SB = Currency<0,0,0,0,0,0,1>;
 
+//using US = Currency;
+
 int main()
 {
 	US us(10);
-	AU au(10);
-
-	us = au;
     return 0;
 }
 

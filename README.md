@@ -1,4 +1,4 @@
-#Stone Template Pirates
+# Stone Template Pirates
 
 
 Project Name: StoneMoney

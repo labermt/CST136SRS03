@@ -1,35 +1,28 @@
 #pragma once
 #include "stdafx.h"
-
-template
-<
-	int US = 100,
-	int AU = 76, 
-	int NZ = 71, 
-	int FJ = 49,
-	int TO = 45,
-	int PG = 31,
-	int SB = 13
->
+#include "countries.h"
 
 
+
+
+template<Countries name, int value>
 class Currency
 {
-	template<typename T>
-	explicit Currency(double int_val = 1.0) : val{ int_val }
-	{
-	}
-	explicit Currency(double initVal = 0): val{initVal} {}
+	double val_{};
 
-	//Currency<US,AU,NZ,FJ,TO,PG,SB>&operator =( Currency<US,AU,NZ,FJ,TO,PG,SB> rhs)
+	template<class US>
+	Currency()
 	{
-		val = ((val * 1.0) * (rhs * 1.0)) / 100;
-		return *this;
+		val_{ 1.0 };
 	}
 
-	template<typename T> 
-	constexpr double convert(T value)
+	template<>
+	struct compiler_assert<false>;
+
+public:
+	/*template<typename T, Currency<>
+	constexpr double convert(T value, currency to)
 	{
-		return ((value *1.0) * val) / 100;
-	}
+		return((value * 1.0 ) / val_) * to.val_;
+	}*/
 };

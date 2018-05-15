@@ -28,13 +28,10 @@ template <Country C, int amount> struct Convert;
 template <int amount>
 struct Convert <Country::AU, amount>
 {
-private:
   //based on USD : 1 AU == 0.76 USD
-  static constexpr auto exchangeRate{0.76};
-public:
   static constexpr auto conversion()
   {
-    return amount / exchangeRate;
+    return amount / 0.76;
   }
 };
 

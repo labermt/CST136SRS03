@@ -1,20 +1,5 @@
 # Stone Template Pirates
 
-
-<<<<<<< HEAD
-Student Name:
-
-Issues:
-
-Notes:
-
-----
-
-Proect Name: StoneMoney
-=======
-Project Name: StoneMoney
->>>>>>> upstream/master
-
 Purpose:
 
 - Learn to use templates.

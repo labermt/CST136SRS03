@@ -24,15 +24,24 @@
     <ClInclude Include="StoneMoney.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="countries.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="conversion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dollarcent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rates.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="main.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="StoneMoney.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

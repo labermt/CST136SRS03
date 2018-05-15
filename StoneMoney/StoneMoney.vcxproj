@@ -147,6 +147,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="conversion.h" />
+    <ClInclude Include="countries.h" />
+    <ClInclude Include="dollarcent.h" />
+    <ClInclude Include="rates.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="StoneMoney.h" />
     <ClInclude Include="targetver.h" />
@@ -159,7 +163,6 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="StoneMoney.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

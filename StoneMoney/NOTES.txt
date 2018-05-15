@@ -1,0 +1,22 @@
+srs03
+using templates
+--
+possible example: 
+template <NZ, template <AU,1.23> >
+
+notes from class:
+can't using floating point with template
+multiply value by 100 to eliminate the decimal
+divide by 100 to get final value
+
+using const expressions
+templates will be in header file
+struct for each currency
+
+----------------------
+
+steps: 
+1. define countries. Use enum? Array? Vector? Other container?
+2. Build template to take country and value
+3. build template conversion function to take in one template with 
+   variable 1 = country, variable 2 = template with country and value to convert from

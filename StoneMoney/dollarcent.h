@@ -10,5 +10,5 @@ private:
 	// using allows you to define moneytype as an alias type rather than a true type, its replacing the word double with moneytype
 
 public:
-	static constexpr moneyType value{ dollar + (cent / 100.0) }; // constexpr runs at compile time, not guaranteed in all cases but here it does
+	static constexpr moneyType value{ dollar + (cent / 100.0) }; // constexpr runs at compile time, not guaranteed in all cases but here it does constexpr deals with doubles 
 };

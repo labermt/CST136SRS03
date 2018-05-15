@@ -1,6 +1,7 @@
 #pragma once
 #include "countries.h"
 #include "dollarcent.h"
+#include "rate.h"
 
 // templates parameters only take types or integral values, only two options 
 // Inception is the type im sending in, and country is the value being sent in 
@@ -20,5 +21,5 @@ struct Conversion<Conversion<Inception, fromCountry>, toCountry>
 {
 	// DollarCent<dollar, cent>
 	static constexpr Country country{ toCountry }; // constexpr allows this line to run only at compile time 
-	static constexpr auto value{ (Inception*fromCountry)/toCountry};
+	static constexpr auto value{ Inception::value * Rate<fromCountry>::value / Rate<toCountry>::value };
 };

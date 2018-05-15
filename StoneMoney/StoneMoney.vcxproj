@@ -150,7 +150,7 @@
     <ClInclude Include="conversion.h" />
     <ClInclude Include="countries.h" />
     <ClInclude Include="dollarcent.h" />
-    <ClInclude Include="rates.h" />
+    <ClInclude Include="rate.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="StoneMoney.h" />
     <ClInclude Include="targetver.h" />

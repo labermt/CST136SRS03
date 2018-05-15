@@ -33,7 +33,7 @@
     <ClInclude Include="dollarcent.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="rates.h">
+    <ClInclude Include="rate.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

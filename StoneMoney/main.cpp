@@ -3,15 +3,16 @@
 
 #include "stdafx.h"
 #include "conversion.h"
+#include <iostream>
 
 
 int main()
 {
 	const auto test{ conversion<Countries::US, 1>{} };
 
-	const auto AUtest{ conversion<Countries::AU, 1>{} };
+	auto const test1{ conversion2 <Countries::AU, conversion<Countries::US, 1>>{} };
 
-	const auto test3{ conversion < Countries::AU, conversion<Countries::US, 1>{}.value_ > {} };
+	std::cout << test1.value_;
 
 	return 0;
 }

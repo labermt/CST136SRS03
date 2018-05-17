@@ -2,8 +2,7 @@
 //
 
 #include "stdafx.h"
-#include "StoneMoney.h"
-#include "countries.h"
+#include "country.h"
 #include "conversion.h"
 #include "dollarcent.h"
 // run code, get to breakpoint, debug, windows, disassembly
@@ -16,7 +15,7 @@ int main()
 
 	// auto check = Conversion<DollarCent<0, 76>, Country::AU>::value; 
 
-	auto check3 = Conversion<Conversion<DollarCent<0, 101>, Country::NZ>, Country::NZ>::value;
+	auto check3 = Conversion<Conversion<DollarCent<-7, 10>, US>, NZ>::value;
 	
 
 	return 0;

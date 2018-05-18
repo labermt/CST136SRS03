@@ -4,32 +4,18 @@
 #include "stdafx.h"
 #include "conversion.h"
 #include <iostream>
+#include "fake_double.h"
 
 
 int main()
 {
-	class wrapper
-	{
-	private:
-		int const converted_value_{ 0 };
-		static int double_to_int(double const num) { return num * 100; }
+	auto const test{ fake_double<3,50>{}.value_ };
 
-	public:
-		explicit wrapper(double const value) : converted_value_{ double_to_int(value) } {}
+	auto const test1{ convert<fake_double<3,50>, Countries::AU, Countries::NZ>{}.value_ };
 
-	public:
-		int get_converted_value_() const noexcept { return converted_value_; }
-	};
+	auto const test2{ convert<convert<fake_double<3,50>, Countries::AU, Countries::US>, Countries::US, Countries::NZ>{}.value_ };
 
-
-	auto const test3 = wrapper(4.32).get_converted_value_();
-
-	auto const test1{ convert<500, Countries::AU, Countries::NZ>{} };
-	auto const test2{ convert<500, Countries::AU, Countries::RU>{} };
-
-
-	std::cout << test1.value_;
-	std::cout << test2.value_;
+	auto const text3{ convert<convert<convert<fake_double<3,50>, Countries::AU, Countries::US>, Countries::US, Countries::NZ>, Countries::NZ, Countries::SB >{}.value_ };
 
 	return 0;
 }

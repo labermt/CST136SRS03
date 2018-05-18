@@ -13,9 +13,9 @@ int main()
 	// Conversion<DollarCent<0, 76>, Country::AU> x; THIS IS THE FIRST EXAMPLE 
 	auto check2 = 42.3;
 
-	// auto check = Conversion<DollarCent<0, 76>, Country::AU>::value; 
+	auto check = Conversion<DollarCent<0, 76>, Country::AU>::value; 
 
-	auto check3 = Conversion<Conversion<DollarCent<-7, 10>, US>, NZ>::value;
+	// auto check3 = Conversion < Conversion <Conversion<DollarCent<7, 10>, US>, NZ>, YP>::value;
 	
 
 	return 0;

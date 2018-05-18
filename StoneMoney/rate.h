@@ -6,14 +6,14 @@
 template<Country country>
 struct Rate
 {
-private: 
+private:
 	using exchangeType = double;
 	// using allows private base class available to the derived class.
 
-	static constexpr exchangeType exchangeRate(Country const countryName) 
-	// A constexpr function is able to compute and evaluate its result at compilation time, if input is known at compilation time.
-	// In other words, the function has "everything it needs" to compute its result at compile time.
-	// static means this function doesnt rely on anything
+	static constexpr exchangeType exchangeRate(Country const countryName)
+		// A constexpr function is able to compute and evaluate its result at compilation time, if input is known at compilation time.
+		// In other words, the function has "everything it needs" to compute its result at compile time.
+		// static means this function doesnt rely on anything
 	{
 		auto result{ std::numeric_limits<exchangeType>::signaling_NaN() };
 		// NAN aka 'not a number', if the country being entered is not coded, nothing sensible will come out of it 
@@ -56,7 +56,7 @@ private:
 
 		default:
 			result = std::numeric_limits<exchangeType>::signaling_NaN();
-			throw (std::domain_error("Unknown country!")); 
+			throw (std::domain_error("Unknown country!"));
 			// this is if the programmer enters an unknown country, should never happen, just incase
 			// "Signaling NaN's" will throw some sort of flag that may be handled through an exception
 		}

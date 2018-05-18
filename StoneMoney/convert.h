@@ -70,38 +70,23 @@ class Currency
 {
 	using Money = std::pair<int, int>;
 
-
 private:
 	double usd_val_{};
 
-	
+
 
 public:
 
-	constexpr Currency(Money money) : usd_val_{ money.first + (money.second / 100.0) }
+	Currency(Money money) : usd_val_{ money.first + (money.second / 100.0) }
 	{
 	}
 
-	constexpr explicit Currency(Currency<Country::NZ> from_currency): usd_val_{from_currency.get_money()}
+	/*constexpr explicit Currency(Currency<Country::NZ> from_currency) : usd_val_{ from_currency.get_money() }
 	{
-	}
+	}*/
 
 	constexpr double get_money() const
 	{
 		return usd_val_;
 	}
-	
-	/*template<Country AU>
-	Currency():val_{Money * .76}
-	{
-	}*/
-
-	//template<>
-	//struct compiler_assert<false>;
-
-	//template<typename T, Currency<>
-	//	constexpr double convert(currency to)
-	//	{
-	//		return((value * 1.0) / val_) * to.val_;
-	//	}
 };

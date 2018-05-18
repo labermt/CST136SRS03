@@ -2,11 +2,11 @@
 
 Stone Template Pirates
 
-Student Name: <Not your pokemon ID>
+Student Name: AJ Stacher
 
-Issues:
+Notes: Using an int, and not a double for currency value will result in loss of data
 
-Notes:
+Issues: n/a
 
 ----
 

@@ -1,11 +1,9 @@
 #pragma once
-#include "countries.h"
 #include <stdexcept>
 
 template <int whole, int fractional>
-class fake_double
+class double_alias
 {
-private:
 	static constexpr auto check_fractional(int const number)
 	{
 		if (number >= 100) { throw std::out_of_range("Too many cents!"); }

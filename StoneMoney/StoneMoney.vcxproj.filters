@@ -27,7 +27,10 @@
     <ClInclude Include="conversion.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="fake_double.h">
+    <ClInclude Include="weight.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="double_alias.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

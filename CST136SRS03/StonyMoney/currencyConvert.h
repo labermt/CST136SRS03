@@ -78,6 +78,8 @@ struct cCodes <countryCode::SB>
 	 
 };
 
+template<countryCode country, typename 
+
 
 template  <countryCode, int money, mycountry>
 	struct currencyExchange

@@ -2,8 +2,8 @@
 
 Stone Template Pirates
 
-Student Name: <Not your pokemon ID>
+Student Name: Chris Michalsen
 
-Issues:
+Issues: 
 
-Notes:
+Notes: Program compiles and runs. 

@@ -5,15 +5,17 @@ int main()
 {
 
 	Currency<Country::NZ, Money<10,50>> test_1;
-	auto nz_money = test_1.val_;
-	auto nz_nation = test_1.nation_;
-	Currency<Country::NZ, Currency<Country::US, Money<10, 50>>> test_2;
-	auto to_money = test_2.val_;
-	auto to_nation = test_2.nation_;
+	auto money_1 = test_1.val_;
+	auto nation_1 = test_1.nation_;
+	Currency<Country::FJ, Currency<Country::US, Money<10, 50>>> test_2;
+	auto money_2 = test_2.val_;
+	auto nation_2 = test_2.nation_;
 	Currency<Country::NZ, Currency<Country::SB, Currency<Country::NZ, Money<10, 50>>>> test_3;
-	auto sb_money = test_3.val_;
-	auto sb_nation = test_3.nation_;
-	
+	auto money_3 = test_3.val_;
+	auto nation_3 = test_3.nation_;
+	Currency<Country::PG, Currency<Country::NZ, Currency<Country::SB, Currency<Country::NZ, Money<10, 50>>>>> test_4;
+	auto money_4 = test_4.val_;
+	auto nation_4 = test_4.nation_;
     return 0;
 }
 

@@ -14,7 +14,7 @@ The island of Yap has treasure all over the island, and it isn't even hidden. Th
 
 You could just walk up and take the money, except you don't know if it is worth the effort. 
 
-To figure this out, you need to write templates to convert the value of local currency to other currencies. 
+To figure this out, you need to write templates to convert the value of any currency to any other currency, and in any sequence of conversion. 
 
 You need to write templates to convert between currencies. Your goal is to generate **NO** code. Ideally this means everything is calculated by the compiler.  
 

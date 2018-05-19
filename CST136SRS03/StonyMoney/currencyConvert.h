@@ -35,8 +35,48 @@ struct cCodes <countryCode::US>
 {
 	static constexpr auto cCurrency = 1.0;
 	 
+};
+
+template<> 
+struct cCodes <countryCode::AU>
+{
+	static constexpr auto cCurrency = 0.76;
+	 
 }; 
 
+template<> 
+struct cCodes <countryCode::NZ>
+{
+	static constexpr auto cCurrency = 0.71;
+	 
+};
+
+template<> 
+struct cCodes <countryCode::FJ>
+{
+	static constexpr auto cCurrency = 0.49;
+	 
+};
+
+template<> 
+struct cCodes <countryCode::TO>
+{
+	static constexpr auto cCurrency = 0.45;
+	 
+};
+
+template<> 
+struct cCodes <countryCode::PG>
+{
+	static constexpr auto cCurrency = 0.31; 
+	 
+};
+template<> 
+struct cCodes <countryCode::SB>
+{
+	static constexpr auto cCurrency = 0.13;
+	 
+};
 
 template <countryCode> 
 struct mycountry

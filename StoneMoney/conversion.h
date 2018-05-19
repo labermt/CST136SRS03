@@ -19,5 +19,5 @@ template <class T, countries country_1, countries country_2, countries country_3
 class conversion<conversion<T, country_1, country_2>, country_2, country_3>
 {
 public:
-	static constexpr auto value_{ T::value_ * (weight<country_2>::value_ / weight<country_3>::value_) };
+	static constexpr auto value_{ conversion<T, country_1,country_2>::value_ * (weight<country_2>::value_ / weight<country_3>::value_) };
 };

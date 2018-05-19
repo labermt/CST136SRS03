@@ -7,6 +7,7 @@ class weight
 	static constexpr auto get_weight(countries const code)
 	{
 		// Suggested by An:https://github.com/an6688/CST136SRS03/blob/master/StoneMoney/rate.h 
+		// TODO: Have Mitch show me how to collapase to one return
 		switch (code)
 		{
 		case countries::US:

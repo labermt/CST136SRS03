@@ -3,6 +3,7 @@
 #include "double_alias.h"
 #include "weight.h"
 
+// Template will fail to build without using a specialization
 template<class T, countries country_1, countries country_2>
 class conversion;
 

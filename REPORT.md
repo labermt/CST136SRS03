@@ -8,9 +8,8 @@ Pokemon ID: Volbeat
 
 Issues: 
 
-All numbers ented into `double_alias` are in US dollar amounts. Perhaps 
-the my template should just take one country and an object to convert to 
-that currency.
+Interfaceing with the template may have been made simplified by storing
+the country as a data member and doing the conversions one step at a time.
 
 Notes: 
 

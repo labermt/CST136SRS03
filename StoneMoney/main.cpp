@@ -5,7 +5,6 @@
 #include "conversion.h"
 #include "double_alias.h"
 
-
 int main()
 {
 	// Test 1 is 10.50US converted to NZ

@@ -17,16 +17,16 @@ static std::map <Country, double> Rate { {Country::AU, 0.75},
 
 
 template<typename T>
-static constexpr T convert(T amount)
+static constexpr T convert(T amount, T C)
 {
-  return amount;
+  return amount / C;
 }
 
 template<typename T, typename... Args>
-static constexpr T convert(T amount, Args... args)
+static constexpr T convert(T amount, T C, Args... args)
 {
   std::vector<T> v { { args...} };
-  return amount * v[0] / v.back();
+  return amount * C / v.back();
 }
 
 #endif

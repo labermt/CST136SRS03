@@ -10,13 +10,16 @@
 
 int main()
 {
-	// Conversion<DollarCent<0, 76>, Country::AU> x; THIS IS THE FIRST EXAMPLE 
-	auto check2 = 42.3;
+ // auto check0 = Conversion<DollarCent<5, 0>, Country::US>::value; 
 
-	auto check = Conversion<DollarCent<0, 76>, Country::AU>::value; 
+ // auto check1 = Conversion<DollarCent<10, 50>, NZ>::value;
 
-	// auto check3 = Conversion < Conversion <Conversion<DollarCent<7, 10>, US>, NZ>, YP>::value;
+ // auto check2 = Conversion <Conversion < DollarCent<100, 25>, NZ>, TO>::value; 
+
+ //auto check3 = Conversion < Conversion <Conversion<DollarCent<4, 20>, NZ>, SB>, NZ>::value;
 	
+  auto check4 = Conversion < Conversion <Conversion<DollarCent<-3, 50>, NZ>, AU>, SB>::value; 
+
 
 	return 0;
 }

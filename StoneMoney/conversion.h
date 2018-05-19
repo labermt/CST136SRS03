@@ -7,7 +7,7 @@
 // Inception is the type im sending in, and country is the value being sent in 
 
 template<class T, Country countryName>
-struct Conversion; // will cause intentional error
+struct Conversion; // will cause intentional error 
 
 template<int dollar, int cent, Country countryName>//partial specialization
 struct Conversion<DollarCent<dollar, cent>, countryName>
@@ -21,7 +21,9 @@ struct Conversion<Conversion<Inception, fromCountry>, toCountry>
 {
 	// DollarCent<dollar, cent>
 	static constexpr Country country{ toCountry }; // constexpr allows this line to run only at compile time 
-	static constexpr auto value{ Inception::value * Rate<fromCountry>::value / Rate<toCountry>::value };
+	// static constexpr auto value{ Inception::value * Rate<fromCountry>::value / Rate<toCountry>::value };
+
+	static constexpr auto value{ Conversion< Inception, fromCountry >::value * Rate<fromCountry>::value / Rate<toCountry>::value };
 };
 // TODO improve inception? make it more specific if possible. do more test cases
 // TODO HAVE A GOOD PRESENTATION, SPEAK TO EVERYTHING IN THIS CODE 

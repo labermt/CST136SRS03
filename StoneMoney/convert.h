@@ -81,10 +81,6 @@ public:
 	{
 	}
 
-	/*constexpr explicit Currency(Currency<Country::NZ> from_currency) : usd_val_{ from_currency.get_money() }
-	{
-	}*/
-
 	constexpr double get_money() const
 	{
 		return usd_val_;

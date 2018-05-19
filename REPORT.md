@@ -4,8 +4,11 @@ Stone Template Pirates
 
 Student Name: Jared Muralt
 
-Issues:
+Issues: 
+Couldn't figure out how to make the template paramters accept other data types besides int. 
+I experimented with nesting conversions but couldn't figure it out.
+This solution converted currency correctly so I am sticking with it.
+Overall, I am struggling to figure out how templates work despite hours of studying.
 
 Notes:
-I chose structs for the templates because there was no need for any private data.
 Currency input values are only integers and output is floating point.

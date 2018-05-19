@@ -25,14 +25,15 @@ struct currency
 	static_assert(cents == 0, "Number is zero. Invalid input.");
 
 	//do something here... dollars + cents ins't the correct answer
-	constexpr auto currency_= dollars + (cents/100.00); 
+	static constexpr auto currency_= {dollars + (cents/100.00)}; 
 	
 };
 
 
-template cCodes <countryCode::US>
+template<> 
+struct cCodes <countryCode::US>
 {
-	 constexpr cCurrency = 1.0;
+	static constexpr auto cCurrency = 1.0;
 	 
 }; 
 

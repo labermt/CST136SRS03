@@ -5,84 +5,74 @@
 enum class Country { US, AU, NZ, FJ, TO, PG, SB };
 
 template<Country country>
-class Exchange;
-
+struct Exchange;
 
 template<>
-class Exchange<Country::US>
+struct Exchange<Country::US>
 {
-public:
-	static constexpr double rate = 1.0;
-
+	static constexpr double rate_ = 1.0;
 }; 
 
 template<>
-class Exchange<Country::AU>
+struct Exchange<Country::AU>
 {
-public:
-	static constexpr double rate = .76;
-
+	static constexpr double rate_ = .76;
 };
 
 template<>
-class Exchange<Country::NZ>
+struct Exchange<Country::NZ>
 {
-public:
-	static constexpr double rate = .71;
-
+	static constexpr double rate_ = .71;
 };
 
 template<>
-class Exchange<Country::FJ>
+struct Exchange<Country::FJ>
 {
-public:
-	static constexpr double rate = .49;
-
+	static constexpr double rate_ = .49;
 };
 
 template<>
-class Exchange<Country::TO>
+struct Exchange<Country::TO>
 {
-public:
-	static constexpr double rate = .45;
-
+	static constexpr double rate_ = .45;
 };
 
 template<>
-class Exchange<Country::PG>
+struct Exchange<Country::PG>
 {
-public:
-	static constexpr double rate = .31;
-
+	static constexpr double rate_ = .31;
 };
 
 template<>
-class Exchange<Country::SB>
+struct Exchange<Country::SB>
 {
-public:
-	static constexpr double rate = .13;
+	static constexpr double rate_ = .13;
+};
 
+template<int dollars, int cents>
+struct Money
+{
+	static_assert(dollars >= 0, "invalid dollars");
+	static_assert(cents <= 100 && cents >= 0, "invalid cents");
+	static constexpr auto money_{ dollars + (cents / 100.0) };
 };
 
 
-template<Country nation>
-class Currency
+template<Country nation, typename currency>
+struct Currency;
+
+
+template<Country to_nation, int dollars, int cents>
+struct Currency<to_nation, Money<dollars,cents>>
 {
-	using Money = std::pair<int, int>;
+	static constexpr auto val_{ Money<dollars,cents>::money_ };
+	static constexpr auto nation_{ to_nation };
 
-private:
-	double usd_val_{};
+};
 
-
-
-public:
-
-	Currency(Money money) : usd_val_{ money.first + (money.second / 100.0) }
-	{
-	}
-
-	constexpr double get_money() const
-	{
-		return usd_val_;
-	}
+template<Country to_nation, Country from_nation, typename last_conversion>
+struct Currency<to_nation, Currency<from_nation, last_conversion>>
+{
+	static constexpr auto val_{ Currency<from_nation, last_conversion>::val_ * (Exchange<to_nation>::rate_ / Exchange<from_nation>::rate_) };
+	static constexpr auto nation_{ to_nation };
 };

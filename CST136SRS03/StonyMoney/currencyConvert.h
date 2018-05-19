@@ -10,7 +10,11 @@ enum class countryCode
 	TO, 
 	PG, 
 	SB
-};  
+};
+
+
+template <countryCode country>
+struct cCodes; 
 
 template <int dollars, int cents>
 struct currency
@@ -18,10 +22,19 @@ struct currency
 	static_assert(dollars < -1,"Negative number. Invalid input");
 	static_assert(cents < -1,"Negative number. Invalid input");
 	static_assert(dollars == 0, "Number is zero. Invalid input.");
-	static_assert(cents == 0, "Number is zero. Invalid input."); 
-	constexpr auto currency_= dollars + cents; 
+	static_assert(cents == 0, "Number is zero. Invalid input.");
+
+	//do something here... dollars + cents ins't the correct answer
+	constexpr auto currency_= dollars + (cents/100.00); 
 	
 };
+
+
+template cCodes <countryCode::US>
+{
+	 constexpr cCurrency = 1.0;
+	 
+}; 
 
 
 template <countryCode> 
@@ -66,9 +79,10 @@ public:
 		}
 
 		return cCurrency;
-	}
 
-template  <countryCode, int money>
+
+
+template  <countryCode, int money, mycountry>
 	struct currencyExchange
 	{
 		

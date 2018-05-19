@@ -2,15 +2,17 @@
 
 Stone Template Pirates
 
-Student Name: <Not your pokemon ID>
+Student Name: Nathan Tout
 
 Issues:
+ - Cannot take in multiple countries in one function call and iterate through the argument 
+	- (va_list: "error reading characters of string"?)
 
 Notes:
 
 ----
 
-Proect Name: Nathan Tout
+Proect Name: StoneMoney
 
 Purpose:
 

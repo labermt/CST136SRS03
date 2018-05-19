@@ -2,8 +2,10 @@
 
 Stone Template Pirates
 
-Student Name: <Not your pokemon ID>
+Student Name: Fennekin
 
 Issues:
 
-Notes:
+Notes: Worked with Drew, Ann, Sasha, Mike.
+
+Took Static assert idea from Jen, Drew helped with math, big props to drew and jen they rock!

@@ -2,11 +2,14 @@
 
 Stone Template Pirates
 
-Student Name: <Not your pokemon ID>
+Student Name: John Kaye
 
-Issues:
+Issues: not sure if std::map builds during compile or run time. Had trouble expanding param pack; ended up loading params
+        into a vector. There is probably a better way to do it.
 
-Notes:
+Notes: attempted to make my template as generic as possible by using a variadic function template with a parameter pack.
+       
+       
 
 ----
 

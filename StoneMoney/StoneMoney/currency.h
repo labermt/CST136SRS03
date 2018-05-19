@@ -3,10 +3,10 @@
 
 #include "country.h"
 
-//Make compiler get mad at you if you have a country that you don't have!
-//Rounding errors
-
+//
 //Conversions from US to other countries
+//
+
 template <Country C, int Money> class Converted;
 
 template <int Money>
@@ -104,8 +104,10 @@ public:
 };
 
 
-
+//
 //Conversions to US currency
+//
+
 template <Country C, Country Co, int Money> class Currency;
 
 //Base conversion of US dollars

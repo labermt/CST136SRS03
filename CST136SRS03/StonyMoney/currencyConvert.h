@@ -68,7 +68,7 @@ template  <countryCode, int money>
 	struct currencyExchange
 	{
 		
-
+		constexpr auto exchangeRate_ = 
 
 
 	};

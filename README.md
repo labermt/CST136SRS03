@@ -1,8 +1,5 @@
 # Stone Template Pirates
 
-
-Project Name: StoneMoney
-
 Purpose:
 
 - Learn to use templates.

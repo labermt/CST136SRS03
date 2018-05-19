@@ -21,10 +21,10 @@
     <ClInclude Include="targetver.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Money.h">
+    <ClInclude Include="Country.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Simulation.h">
+    <ClInclude Include="Conversion.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -35,10 +35,10 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Money.cpp">
+    <ClCompile Include="Country.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Simulation.cpp">
+    <ClCompile Include="Conversion.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -4,7 +4,7 @@
 template <typename Sum, typename CurrencyValue> 
 constexpr auto convert (const Sum s, const CurrencyValue base, const CurrencyValue target)
 {	
-	assert(static_cast<double>(base) >= 0 && static_cast<double>(target) >= 0);
+	assert(static_cast<double>(base) >= 0 && static_cast<double>(target) >= 0 && s >= 0);
 
 	auto sum = s;
 	

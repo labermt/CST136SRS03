@@ -9,9 +9,9 @@ int main()
   double test3{convert(10.0, Rate[Country::US], Rate[Country::SB],
                              Rate[Country::FJ], Rate[Country::US])};
 
-  std::cout << test << "\n";
-  std::cout << test2 << "\n";
-  std::cout << test3 << "\n";
+  //std::cout << test << "\n";
+  //std::cout << test2 << "\n";
+  //std::cout << test3 << "\n";
 
   return 0;
 }

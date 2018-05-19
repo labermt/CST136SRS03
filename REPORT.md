@@ -2,8 +2,8 @@
 
 Stone Template Pirates
 
-Student Name: <Not your pokemon ID>
+Student Name: Michael Waxman
 
-Issues:
+Issues: Plenty and cannot all be listed here. 
 
 Notes:

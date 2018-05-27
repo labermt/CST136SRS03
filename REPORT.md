@@ -2,8 +2,9 @@
 
 Stone Template Pirates
 
-Student Name: <Not your pokemon ID>
+Student Name: Michael Waxman
 
-Issues:
+Issues: stuck point: 
+pass the country currency, convert currency to currency,  and do the conversion using a template. 
 
 Notes:
